@@ -127,6 +127,7 @@ console.log(div);
 
 let ou = document.querySelector('#tagoutp');
 document.querySelector('#tags').addEventListener('keydown', function(e){
+  
     if(e.keyCode == 13){
  
         let span = document.createElement('span')
@@ -138,8 +139,63 @@ document.querySelector('#tags').addEventListener('keydown', function(e){
         span.addEventListener('click', function(){
             this.remove();
         })
+ 
+   
     }
 
- 
+      if(e.keyCode == 8 &&  this.value == ''){
+            console.log("asd");
+              document.querySelector('.myspantag:last-child').remove();
+        }
 
 })
+
+
+let child = document.querySelector('.myelement');
+let parents = document.querySelector('.parent');
+//child.parentElement // აბრუნებს მშობელ ელემენტს
+// parents.children //   მშობელ ელემენტის შვილობილ ელემენტებს
+// child.nextElementSibling // გვიბრუნებს ელემენტის ქვედა მეზობელ ელემენტს
+//child.previousElementSibling // გვიბრუნებს ელემენტის ზედა მეზობელ ელემენტს
+
+//child.parentElement.style.color = "green"
+//parents.children.style.color = "green"
+
+// for (let l = 0; l < parents.children.length; l++) {
+//     const element = parents.children[l];
+//     element.style.color = "green"
+// }
+
+// child.nextElementSibling.innerHTML = child.nextElementSibling.innerHTML + " ქვედა მეზობელი "
+// child.previousElementSibling.innerHTML = child.previousElementSibling.innerHTML + " ზედა მეზობელი "
+// console.log(child.nextElementSibling)
+
+
+let next = document.querySelector('.next');
+let prev = document.querySelector('.prev');
+let allp = document.querySelectorAll('.parent p');
+
+
+next.onclick = function(){
+    let active = document.querySelector('p.active');
+    active.classList.remove('active');
+    if(active.nextElementSibling != null){
+        
+         active.nextElementSibling.classList.add('active')
+    }else{
+        allp[0].classList.add('active')
+    }
+   
+}
+
+prev.onclick = function(){
+    let active = document.querySelector('p.active');
+    active.classList.remove('active');
+    if(active.previousElementSibling != null){
+        
+         active.previousElementSibling.classList.add('active')
+    }else{
+        allp[allp.length - 1].classList.add('active')
+    }
+   
+}

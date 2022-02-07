@@ -121,6 +121,7 @@ transform: translateY(9px) rotate(
 
 .tag input{
   border: 0;
+  border-bottom: 1px solid #ccc;
 }
 
 .tag input:focus{
@@ -134,3 +135,12 @@ transform: translateY(9px) rotate(
       border-radius: 3px;
       border: 1px solid green;
   }
+
+  p{
+      transition: all .6s;
+  }
+
+p.active{
+    padding-left: 25px;
+    color: green;
+}
