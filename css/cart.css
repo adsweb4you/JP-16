@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    width: 1200px;
+    margin: auto;
+    max-width: 100%;
+}
+
+.sub-nav{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.logo img{
+   width: 100px;
+   position: absolute;
+   top: -7px;
+
+}
+
+.search{
+    display: flex;
+}
+
+.form-rel{
+    position: relative;
+    margin-right: 7px;
+}
+
+.form-rel input{
+  padding: 4px;
+}
+
+.form-rel i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+.cart{
+  position: relative;
+  top: 3px;
+}
+
+ 
+.navbar, ul{
+  padding-left: 0;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li  a{
+   text-decoration: 0;
+   margin: 0 7px;
+   color: rgba(20, 19, 19, 0.972);
+   font-weight: bold;
+   display: inline-block;
+   padding: 12px 0;
+}
+
+.mynavbar{
+    background-color: #ccc;
+    margin-top: 60px;
+}
+
+.bedcoub li {
+    display: inline-block;
+}
+
+.bedcoub li  a{
+     margin: 0 7px;
+    color: rgba(24, 78, 253, 0.972);
+ 
+    display: inline-block;
+    padding: 12px 0;
+    text-decoration: 0  ;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-6{
+    width: 60%;
+}
+
+.col-4{
+    width: 40%;
+}
+
+.descr{
+    position: relative;
+}
+
+.stock{
+    position: absolute;
+    right: 0;
+    top: 47%;
+}
+
+.size button{
+    background-color: #f2f6f9;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+}
+
+.color div{
+    width: 40px;
+    height: 25px;
+    display: inline-block;
+}
+
+.color div:nth-child(2){
+  background-color: black;
+}
+.color div:nth-child(3){
+    background-color: rgb(144, 27, 27);
+  }
+
+  .color div:nth-child(4){
+    background-color: rgb(62, 248, 6);
+  }
+ 
+
+  @media (max-width:800px) {
+      .container{
+          padding: 0 15px;
+      }
+
+      img{
+          max-width: 100%;
+      }
+
+      .col-6 , .col-4{
+          width: 100%;
+          margin-top: 20px;
+      }
+
+      .sub-nav{
+          flex-direction: column;
+      }
+
+      .logo img{
+          position: relative;
+      }
+  }
+
+
+  
+  .btn{
+    background-color: blue;
+    color: #fff;
+    border-radius: 1px ;
+    border: 0;
+    padding: 7px 8px;
+    display: inline-block;
+    margin-top: 25px;
+    transform: translate(0,0);
+    animation-name: mybtn;
+    animation-duration: .6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.circ{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: red;
+    animation-name: mybtn;
+    animation-duration: .2s;
+    animation-iteration-count: infinite;
+ 
+}
+
+@keyframes mybtn {
+    0% {  opacity: 1; }
+
+    100% {  opacity: 0; }
+}

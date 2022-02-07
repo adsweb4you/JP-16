@@ -1,0 +1,8 @@
+$btnlg:50px;
+
+@mixin mybtn {
+    background-color: transparent;
+    border: 1px solid red;
+    color: red;
+    padding: $btnlg;
+}

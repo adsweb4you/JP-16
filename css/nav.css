@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: bpg;
+    src: url('../fonts/bpg_mrgvlovani_caps_2010.ttf');
+}
+
+body{
+    margin: 0;
+}
+
+.mineheader{
+    height: 500px;
+    background: linear-gradient(90deg, rgba(14,2,252,1) 16%, rgba(120,187,241,1) 78%);
+}
+
+.flex{
+    display: flex;
+}
+
+.content{
+    width: 1100px;
+    margin: auto;
+    max-width: 100%;
+}
+
+ul{
+    margin-left: auto;
+}
+
+ul li {
+ display: inline-block;
+}
+
+ul li a{
+    font-family: bpg;
+  text-decoration: 0;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 7px;
+  color: #fff;
+}
+
+h1{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+nav{
+    /* position: fixed; */
+    width: 100%;
+    top: 0;
+    background-color: #1c1b3a;
+}
+
+.start{
+    position: sticky;
+    background-color: chartreuse;
+    color: #fff;
+    padding: 7px ;
+    display: inline-block;
+    text-decoration: 0;
+    top: 0;
+}
+
+.text-white{
+color: #fff;
+}
+
+.h-100{
+    height: 100%;
+}
+
+.text{
+    width: 40%;
+    padding-top: 70px;
+    text-transform: uppercase;
+}
+
+.myicon{
+ position: relative;
+ top: 7px;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background-color: blue;
+    margin: auto;
+}
+
+.disc{
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    background-color: #7fff007a;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 7px;
+    top: 7px;
+    color: #29ff29;
+    border: 3px dashed;
+}
+
+.w-100{
+    width: 100%;
+}

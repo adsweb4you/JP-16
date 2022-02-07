@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  background-image: url("../img/foto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+button {
+  padding: 15px;
+  outline: 0;
+  border: 0;
+}
+
+.inpred {
+  border: 1px solid #ccc;
+  padding: 25px;
+  border-radius: 3px;
+  font-size: 20px;
+}
+.inpred:focus {
+  outline: 0;
+  background-color: #b40808;
+}
+
+.inpblack {
+  border: 1px solid #ccc;
+  padding: 25px;
+  border-radius: 3px;
+  font-size: 30px;
+}
+.inpblack:focus {
+  outline: 0;
+  background-color: black;
+}
+
+.blues {
+  border: 1px solid #ccc;
+  padding: 25px;
+  border-radius: 3px;
+  font-size: 25px;
+}
+.blues:focus {
+  outline: 0;
+  background-color: blue;
+}
+
+button {
+  background-color: aqua;
+  background-color: transparent;
+  border: 1px solid red;
+  color: red;
+  padding: 50px;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.cart {
+  width: 350px;
+  margin: auto;
+  background-color: #f60c0c;
+  transition: all 0.6s;
+}
+.cart img {
+  max-width: 100%;
+}
+.cart .card-body {
+  background-color: #072ff8ee;
+}
+.cart:hover {
+  box-shadow: 7px 7px 7px #030202;
+}
+
+/*# sourceMappingURL=app.css.map */

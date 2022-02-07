@@ -1,0 +1,86 @@
+@font-face {
+    font-family: bpg;
+    src: url('../fonts/bpg_mrgvlovani_caps_2010.ttf');
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+.mine{
+    height: 500px;
+    background-image: url('../img/foto.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text{
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.context{
+    width: 20%;
+    background-color: #000000ad;
+    color: #fff;
+    font-family: 'bpg';
+    padding: 25px;
+    border-radius: 7px;
+   
+}
+
+body{
+    margin: 0;
+}
+
+ .box{
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+.col{
+    padding: 0 15px;
+    width: 25%;
+    margin-bottom: 30px;
+    
+}
+
+.bg{
+    background-color: greenyellow;
+}
+
+.navbar{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.navbar li {
+    padding: 22px 0;
+    display: inline-block;
+}
+
+nav{
+    background-color: rgb(22, 22, 22);
+}
+
+.navbar li a{
+  text-decoration: 0;
+  font-family: bpg;
+  color: #fff;
+  font-size: 13px;
+  margin: 0 7px;
+}
+
+.col-75{
+    width: 75%;
+    padding: 0 15px;
+}
+
+.col-33{
+    width: 33.333333%;
+    padding: 0 15px;
+}

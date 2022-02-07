@@ -1,0 +1,10 @@
+1) შემოგვაქვს bootstrap კომპონენტები 
+
+ -- navbar
+ -- carusel
+ -- modal
+ -- Collapse
+ -- Dropdowns
+ -- Forms
+
+  https://d2gdtie5ivbdow.cloudfront.net/media/images/bootstrap_forms.PNG

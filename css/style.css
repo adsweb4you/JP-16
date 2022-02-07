@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+@font-face {
+    font-family: bpg;
+    src: url('../fonts/bpg_mrgvlovani_caps_2010.ttf');
+}
+
+ 
+
+#jek{
+    color: aquamarine;
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+.bob {
+    color:greenyellow;
+    font-family: bpg;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: line-through underline overline;
+    text-transform: capitalize;
+    letter-spacing: 8px;
+}
+
+p{
+    /* width: 400px; */
+    line-height: 1.2;
+    /* background-color: greenyellow;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+}
+
+.minehader{
+    height: 450px;
+    /* background-color: orangered; */
+    background-image: url('../img/foto.jpg');
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.grad{
+    background: linear-gradient(0deg, rgba(255,66,66,1) 15%, rgba(56,60,57,1) 71%);
+}
+
+h2, p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.card{
+    /* margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto; */
+    font-family: bpg;
+    margin: 50px auto ;
+    width: 380px;
+    box-shadow: 3px 5px 13px #ccccccb8;
+    /* border:1px solid red; */
+
+}
+
+.w-100{
+    width: 100%;
+}
+
+.card-body{
+    padding: 25px;
+}
+
+.pd{
+    padding-top: 15px;
+    padding-bottom:25px;
+}
+
+.more{
+    text-decoration: none;
+    background-color: blue;
+    padding: 11px 17px;
+ 
+    color: #fff;
+}

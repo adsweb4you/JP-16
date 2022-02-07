@@ -1,0 +1,85 @@
+@use "button.scss";
+
+$basecolor:rgb(246, 12, 12);
+$lightcolor:#ccc;
+$darkcolor:#072ff8ee;
+
+
+body{
+    margin: 0;
+    background: {
+    image:url('../img/foto.jpg');
+    repeat:no-repeat;
+    size:cover;
+    position: center;
+    };
+}
+
+%btn{
+    padding: 15px;
+    outline: 0;
+    border: 0;
+}
+
+@mixin input($bgcolor:#fff) {
+    border: 1px solid #ccc;
+    padding: 25px;
+    border-radius: 3px;
+
+    @if $bgcolor == black {
+        font-size: 30px;
+    }@else if $bgcolor == blue{
+        font-size: 25px;
+    }
+    @else{
+        font-size: 20px;
+    }
+
+
+    &:focus{
+        outline: 0;
+        background-color: $bgcolor;
+    }
+
+}
+
+.inpred{
+    @include input(#b40808);
+}
+
+.inpblack{
+    @include input(black);
+}
+
+.blues{
+    @include input(blue);
+}
+ 
+
+button{
+    @extend %btn;
+    background-color: aqua;
+ 
+    @include button.mybtn();
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.cart{
+    width: 350px;
+    margin: auto;
+    background-color: $basecolor;
+    transition: all .6s;
+    img{
+        max-width: 100%;
+    }
+
+    .card-body{
+     background-color: $darkcolor;
+    }
+
+    &:hover{
+        box-shadow: 7px 7px 7px rgb(3, 2, 2);
+    }
+}

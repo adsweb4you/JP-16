@@ -1,0 +1,3 @@
+1) https://cssanimation.rocks/images/posts/hero-header/tito.png
+2) https://cdn.codecoda.com/themes/user/site/default/asset/img/blog/CSS-layout-4.png
+3) https://i1.wp.com/cssscript.com/wp-content/uploads/2018/12/Tiny-Flexbox-Grid-Layout-In-Pure-CSS-infinity-css-grid.png?fit=565%2C376&ssl=1

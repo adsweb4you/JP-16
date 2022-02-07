@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    height: 1500px;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex div{
+   width: 33.3333%;
+   background-color: blue;
+}
+
+.w-70{
+    width: 66.6666% !important;
+    background-color: chartreuse !important;
+}
+
+
+.card{
+    width: 350px;
+    margin: auto;
+    position: relative;
+    box-shadow: 7px 7px 7px #00000059;
+    transition: all .5s;
+}
+
+
+ 
+
+img{
+    width: 100%;
+}
+
+.price{
+    margin-top: 25px;
+    display: inline-block;
+}
+
+.discount{
+    position: absolute;
+    transition: all .5s;
+    background-color: chartreuse;
+    left:  0;
+    top: 0;
+}
+
+.card:hover .discount{
+    background-color: chartreuse;
+    left: 35%;
+    top: 15%;
+    box-shadow: 2px 4px 15px #00000059;
+}
+
+.scroltop{
+    width: 40px;
+    height: 40px;
+    position: sticky;
+    /* bottom: 15px;
+    right: 15px; */
+    top: 0;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.h3{
+    height: 800px;
+}
+
+ /* კურსოსრის შეტანა ინფუთში*/
+input:focus{
+    transition: all 1s;
+    padding: 25px;
+}
+
+/* მაუსის მიტანა */
+.card:hover{
+    box-shadow: 2px 4px 15px #00000059;
+}
+
+/* დაკლიკვა */
+.card:active{
+    background-color: aqua
+}
+
+a:visited{
+    color: chartreuse;
+}
+
+.pselement p:first-child{
+     background-color: red;
+}
+
+.pselement p:last-child{
+    background-color: rgb(29, 255, 86);
+}
+
+
+.pselement p:nth-child(3){
+    background-color: rgb(119, 4, 226);
+}
+
+.pselement p:nth-child(odd){
+   color: #000;
+}
+
+.pselement p:nth-child(even){
+   color: #fff;
+}
+
+
+.pselement p:not(.mine){
+    font-weight: bold;
+}
+
+a[href="navs.html"]{
+    background-color: black;
+    padding: 25px;
+    display: inline-block;
+}
+
+input[type="checkbox"]:checked  + label{
+   background-color: green;
+}
+
+P:lang(ka){
+    font-size: 50px;
+}
+
+
+P:lang(en){
+    font-size: 25px;
+}
+
+.bef{
+    width: 50%;
+    height: 400px;
+    margin: auto;
+}
+
+.bef::after{
+    
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: greenyellow;
+}
+
+
+.bef::before{
+
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(245, 33, 44);
+}
