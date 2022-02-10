@@ -130,14 +130,17 @@ document.querySelector('#tags').addEventListener('keydown', function(e){
   
     if(e.keyCode == 13){
  
-        let span = document.createElement('span')
+        let span = document.createElement('span');
+        let i = document.createElement('i')
+        i.classList.add('bi', 'bi-trash2')
         span.innerText = this.value;
+        span.appendChild(i)
         span.classList.add('myspantag')
         this.value = ''
         
         ou.appendChild(span);
-        span.addEventListener('click', function(){
-            this.remove();
+        i.addEventListener('click', function(){
+            this.parentElement.remove();
         })
  
    
