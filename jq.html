@@ -40,12 +40,25 @@
            position: relative;
         }
 
+        .butt{
+    width: 151px;
+    height: 40px;
+    margin: auto;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: blue;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+        }
+
     </style>
 
 </head>
 <body>
 
-    <div class="box"></div>
+    <div class="box bg-danger"></div>
 
     <!-- <p>კონტენტ</p>
     <p>კონტენტ</p>
@@ -56,6 +69,7 @@
 
     <button class="show">გამოჩენა</button>
     <button class="hide">დამალვა</button>
+    <button class="empty">გასუფთავება</button>
     <button class="showhide">დამალვა/გამოჩენა</button>
 
 
@@ -75,7 +89,28 @@
 
     </div>
     
+<div class="butt text-center">
+    <h1 class="js">SIGN IN</h1>
 
+
+    <form style="width: 500px; margin: auto;">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="button" class="btn btn-primary go">Submit</button>
+      </form>
+
+</div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 

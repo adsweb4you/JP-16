@@ -20,10 +20,41 @@ $(".show").click(function (e) {
     } );
 });
 
-
+let count = 0;
 $(".hide").click(function (e) { 
     e.preventDefault();
-    $('.box').slideUp(1000);
+     //$('.box').slideUp(1000);
+    // $('.box').addClass('bg-danger') // კლასის მინიჭება
+   //  $('.box').removeClass('bg-danger') // კლასის წაშლა
+  //  $('.box').toggleClass('bg-danger') // კლასის თოგლი
+ // $('.box').hasClass('bg-danger') კლასის გადამოწმება
+
+ let inp = `<div class="mb-3">
+ <label for="exampleInputPassword1" class="form-label">ველი ${count}</label>
+ <input type="text" class="form-control" id="exampleInputPassword1">
+</div>`
+// $('.box').before(inp); // ელემენტის შექმნა დამატება  (სელექტორის შემდეგ)
+// $('.box').after(inp); // ელემენტის შექმნა დამატება  (სელექტორამდე)
+// $('.box').append(inp); // ელემენტის შექმნა დამატება (ბოლოს)
+ //$('.box').prepend(inp);  // ელემენტის შექმნა დამატება (თავში)
+count++;
+
+let width = $('.box').width(); // აბრუნებს კონტენტის ზომას
+let innerwidth = $('.box').innerWidth(); // აბრუნებს კონტენტის ზომას + padding
+let outterwidth = $('.box').outerWidth(); // აბრუნებს კონტენტის ზომას + padding + border
+console.log(outterwidth);
+
+$('.mb-3').click(function (e) { 
+    e.preventDefault();
+    $(this).remove(); // ელემენტის წაშლა
+
+});
+
+$(".empty").click(function (e) { 
+    e.preventDefault();
+    $('.box').empty();  // ელემენტის  კონტენტის გასუფთავება
+});
+
 });
 
 
@@ -94,6 +125,30 @@ $(".circl").click(function (e) {
             })
         })
     })
+});
+
+
+$(".butt").click(function (e) { 
+    e.preventDefault();
+ 
+    if(e.target.classList[0] == "js"){
+         $(this).animate({
+        "width":"100%",
+        "top":"0",
+        "height":"100vh",
+    }, 500)   
+    }
+
+
+});
+
+$(".go").click(function (e) { 
+    e.preventDefault();
+    $(".butt").animate({
+        "width":"151px",
+        "top":"90vh",
+        "height":"40px",
+    }, 500)
 });
 
  })
