@@ -151,6 +151,42 @@ $(".go").click(function (e) {
     }, 500)
 });
 
+$('.head').click(function (e) { 
+    e.preventDefault();
+    $(this).toggleClass('show');
+    $('.option').toggleClass('d-block');
+});
+
+$(".option li").click(function (e) { 
+    e.preventDefault();
+    let text = $(this).text();
+    $('.option').toggleClass('d-block');
+    $('.head').text(text)
+});
+// აბრუნებს უშუალო მშობელს $('.child').parent()
+// აბრუნებს ყველა წინაპარს $('.child').parents('.col-lg-4')
+// აბრუნებს ყველა შვილობილ ტეგს  $('.parent').children()
+// აბრუნებს  მშობლებს კონკრეტულ ელემენტამდე  $('.child').parentsUntil('.col-lg-4') 
+// აბრუნებს ქვედა მეზობელს $('.child').next()
+// აბრუნებს ყველა ქვედა მეზობელს $('.child').nextAll()
+// აბრუნებს ზედა მეზობელს  $('.child').prev()  
+// აბრუნებს ყველა ზედა მეზობელს $('.child').prevAll()
+// ეძებს ელემენტს $('.parent').find( '.col').css('color', 'red')
+// აბრუნებს პირველ ელემენტს  $('.col').first().css('color', 'red')
+// აბრუნებს ბოლო ელემენტს  $('.col').last().css('color', 'green')
+ //$('.col').eq(5).css('color', 'green') //აბრუნებს   ელემენტს  ინდექსის მიხედვით
+
+
+ $('.parent .col').filter(function(index, element){
+   if ($(element).text().length > 4) {
+     $(element).css('font-weight',"bold")
+   }else{
+    $(element).css('color',"red")
+   }
+ })
+
+console.log( $('.child').prevUntil('h1')   )
+
  })
 
  
