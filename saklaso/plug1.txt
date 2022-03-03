@@ -1,0 +1,17 @@
+1) შემოქვაქვს შემდეგი ტიპის  ფლაგინები 
+
+   swiper.js შემდეგი კონფიგურაციით 
+
+    -- Autoplay
+    -- Responsive breakpoints
+
+   Lightbox შეგიძლიათ შემოიტანოთ ნებისმიერი
+
+   Magnify.JS (არ ამიხსნია თუ შეძლებთ შემოიტანეთ)
+
+   range slider (https://codepen.io/jeee/pen/abzVBmL შპარგალკა :დ)
+
+   select2.js (არ ამიხსნია თუ შეძლებთ შემოიტანეთ)
+
+
+2) გამოვიყენოთ setInterval და setTimeout ფუნქციები

@@ -187,6 +187,94 @@ $(".option li").click(function (e) {
 
 console.log( $('.child').prevUntil('h1')   )
 
+
+
+
+$('.next').click(function (e) { 
+    e.preventDefault();
+    
+if ($('.items.ac').next().length > 0) {
+      $('.items.ac').removeClass('ac').next().addClass('ac')
+}else{
+    $('.items.ac').removeClass('ac');
+    $('.items').first().addClass('ac')
+}
+});
+
+
+$('.prev').click(function (e) { 
+    e.preventDefault();
+    
+if ($('.items.ac').prev().length > 0) {
+      $('.items.ac').removeClass('ac').prev().addClass('ac')
+}else{
+    $('.items.ac').removeClass('ac');
+    $('.items').last().addClass('ac')
+}
+});
+    let crt = document.querySelector('.add-cart').getBoundingClientRect(); 
+    $('.crt').css({'top': crt.top+"px",'left': crt.left+"px" }) 
+
+$(".add-cart").click(function (e) { 
+    e.preventDefault();
+ 
+    let cord = document.querySelector('.carts').getBoundingClientRect();
+
+  
+ $(this).replaceWith('<h1> ტექსტი </h1>')
+
+console.log($('.mineinput').attr('type'))
+$('.mineinput').attr('type', 'password')
+$('.mineinput').removeAttr('type')
+
+    setTimeout(()=>{
+        $('.crt').addClass('position-fixed')
+    }, 1000)
+   
+    $('.crt').animate({
+        "top":cord.top+"px",
+        "left":cord.left+"px",
+    }, 1200)
+
+});
+
+$.each($('.items'), function (index, elemt) { 
+  console.log( $(elemt).html())  
+});
+
+
+$.ajax({
+    type: "get",
+    url: "https://jsonplaceholder.typicode.com/posts",
+    // data: "data",
+    // dataType: "dataType",
+    success: function (response) {
+        console.log(response);
+    }
+});
+
+ let mytime;
+
+$(document).on('mousemove', function(e){
+
+clearTimeout(mytime)
+
+  mytime = setTimeout(function(){
+  alert('დრო გავიდა')
+},5000)
+
+
+})
+
+s = 0;
+
+setInterval(function(){
+ 
+    console.log(s)
+s++;
+}, 1000)
+
+
  })
 
  
