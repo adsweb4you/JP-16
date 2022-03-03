@@ -79,6 +79,18 @@ var myModal = new bootstrap.Modal(document.getElementById('exampleModalToggle'),
   .then(response=> response.json())
   .then(resp => {
     resp.forEach(element => {
-      console.log(element.body);
+      //console.log(element.body);
   });
   })
+
+
+  let obj  = {
+      age:25,
+      name:"test"
+  }
+
+  let convert  = JSON.stringify(obj)
+
+  let decode = JSON.parse(convert)
+
+localStorage.setItem('obj', convert);
