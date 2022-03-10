@@ -42,8 +42,55 @@ function myname():void{
   // return აქ აქვს
 }
 
-function myage():number{
-    return 23
+function myage<e>(g:e):e{
+    return g
 }
 
-console.log(myage())
+myage<string>('45')
+myage<number>(1231)
+myage<object>({obj:"asd"})
+
+interface pros {
+  name:string,
+}
+
+function component(myname:any){
+  return myname
+}
+
+@component({
+  name:"asdas"
+})
+
+class Animal implements pros{
+
+  name:"23"
+
+  constructor(){
+
+  }
+
+ public bark(){
+    return "56465";
+  }
+
+}
+
+ 
+
+class Dog extends  Animal{
+
+  constructor(){
+    super();
+  }
+
+
+  test(){
+    return super.bark()
+  }
+
+}
+
+let anim  = new Animal();
+
+console.log(anim.bark())
